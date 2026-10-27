@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Feedback</title>
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+  <header>
+    <h1>Form — DOM & Event Handling</h1>
+    <nav>
+      <a href="index.html">Produk</a>
+      <a href="form.html" class="aktif">Form Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Form Feedback</h2>
+
+    <form id="feedback-form">
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" placeholder="Masukkan nama kamu">
+      <small class="error" id="error-nama"></small>
+
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="contoh@email.com">
+      <small class="error" id="error-email"></small>
+
+      <label for="pesan">Pesan</label>
+      <textarea id="pesan" rows="4" placeholder="Tulis pesan atau saran..."></textarea>
+      <small class="error" id="error-pesan"></small>
+      <small id="counter">0 karakter</small>
+
+      <button type="submit">Kirim</button>
+    </form>
+
+    <div id="hasil"></div>
+  </main>
+
+  <script src="js/form.js"></script>
+</body>
+</html>
